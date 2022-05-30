@@ -1,0 +1,66 @@
+-- Instances:
+
+local keysis = Instance.new("ScreenGui")
+local keyframe = Instance.new("Frame")
+local keylabel = Instance.new("TextLabel")
+local enterkeybutton = Instance.new("TextButton")
+local password = Instance.new("TextBox")
+
+--Properties:
+
+keysis.Name = "keysis"
+keysis.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+keysis.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+keyframe.Name = "keyframe"
+keyframe.Parent = keysis
+keyframe.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+keyframe.BorderSizePixel = 5
+keyframe.LayoutOrder = 5
+keyframe.Position = UDim2.new(0.407093287, 0, 0.372986376, 0)
+keyframe.Size = UDim2.new(0, 241, 0, 204)
+
+keylabel.Name = "keylabel"
+keylabel.Parent = keyframe
+keylabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+keylabel.BorderColor3 = Color3.fromRGB(25, 25, 25)
+keylabel.Position = UDim2.new(0.152807459, 0, 0.0464088582, 0)
+keylabel.Size = UDim2.new(0, 164, 0, 47)
+keylabel.Font = Enum.Font.SourceSans
+keylabel.Text = "key sistem"
+keylabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+keylabel.TextScaled = true
+keylabel.TextSize = 14.000
+keylabel.TextWrapped = true
+
+enterkeybutton.Name = "enterkeybutton"
+enterkeybutton.Parent = keyframe
+enterkeybutton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+enterkeybutton.BorderColor3 = Color3.fromRGB(25, 25, 25)
+enterkeybutton.Position = UDim2.new(0.13534914, 0, 0.738613486, 0)
+enterkeybutton.Size = UDim2.new(0, 169, 0, 45)
+enterkeybutton.Font = Enum.Font.SourceSans
+enterkeybutton.Text = "enter key"
+enterkeybutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+enterkeybutton.TextScaled = true
+enterkeybutton.TextSize = 14.000
+enterkeybutton.TextWrapped = true
+enterkeybutton.MouseButton1Down:connect(function()
+if password.Text == "d4rk" then
+	wait(1)
+	keysis:Destroy()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/trip-premiun/main/hub",true))()
+end
+end)
+password.Name = "password"
+password.Parent = keyframe
+password.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+password.BorderColor3 = Color3.fromRGB(27, 42, 53)
+password.Position = UDim2.new(0.146622911, 0, 0.398644716, 0)
+password.Size = UDim2.new(0, 150, 0, 38)
+password.Font = Enum.Font.SourceSans
+password.Text = "password here"
+password.TextColor3 = Color3.fromRGB(255, 255, 255)
+password.TextScaled = true
+password.TextSize = 14.000
+password.TextWrapped = true
