@@ -49,7 +49,7 @@ enterkeybutton.MouseButton1Down:connect(function()
 if password.Text == "d4rk" then
 	wait(1)
 	keysis:Destroy()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/trip-premiun/main/hub",true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GamerEmilianoFF/trip-premiun/main/hub',true))()
 end
 end)
 password.Name = "password"
