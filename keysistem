@@ -57,8 +57,8 @@ enterbutton.MouseButton1Down:connect(function()
 	if keybox.Text == "d4rk" then
 		wait(1)
 		keysistem:Destroy()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/trip-premiun/main/hub%27",true))()
-	end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/trip-premiun/main/hub",true))()
+end
 end)
 
 keybox.Name = "keybox"
