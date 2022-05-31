@@ -1,66 +1,169 @@
--- Instances:
+--made by emiliano
 
-local keysis = Instance.new("ScreenGui")
+
+local keysistem = Instance.new("ScreenGui")
 local keyframe = Instance.new("Frame")
 local keylabel = Instance.new("TextLabel")
-local enterkeybutton = Instance.new("TextButton")
-local password = Instance.new("TextBox")
+local enterbutton = Instance.new("TextButton")
+local keybox = Instance.new("TextBox")
+local helpbutton = Instance.new("TextButton")
+local helpframe = Instance.new("Frame")
+local howkey = Instance.new("TextLabel")
+local _1 = Instance.new("TextLabel")
+local _2 = Instance.new("TextLabel")
+local _3 = Instance.new("TextLabel")
+local xbutton = Instance.new("TextButton")
 
 --Properties:
 
-keysis.Name = "keysis"
-keysis.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-keysis.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+keysistem.Name = "keysistem"
+keysistem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+keysistem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 keyframe.Name = "keyframe"
-keyframe.Parent = keysis
+keyframe.Parent = keysistem
 keyframe.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-keyframe.BorderSizePixel = 5
-keyframe.LayoutOrder = 5
-keyframe.Position = UDim2.new(0.407093287, 0, 0.372986376, 0)
-keyframe.Size = UDim2.new(0, 241, 0, 204)
+keyframe.Position = UDim2.new(0.364687741, 0, 0.195786878, 0)
+keyframe.Size = UDim2.new(0, 217, 0, 296)
+keyframe.Active = true
+keyframe.Draggable = true
 
 keylabel.Name = "keylabel"
 keylabel.Parent = keyframe
 keylabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 keylabel.BorderColor3 = Color3.fromRGB(25, 25, 25)
-keylabel.Position = UDim2.new(0.152807459, 0, 0.0464088582, 0)
-keylabel.Size = UDim2.new(0, 164, 0, 47)
+keylabel.Position = UDim2.new(0.101382487, 0, 0, 0)
+keylabel.Size = UDim2.new(0, 173, 0, 54)
 keylabel.Font = Enum.Font.SourceSans
-keylabel.Text = "key sistem"
-keylabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+keylabel.Text = "KEY SISTEM"
+keylabel.TextColor3 = Color3.fromRGB(255, 255, 2524)
 keylabel.TextScaled = true
 keylabel.TextSize = 14.000
 keylabel.TextWrapped = true
 
-enterkeybutton.Name = "enterkeybutton"
-enterkeybutton.Parent = keyframe
-enterkeybutton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-enterkeybutton.BorderColor3 = Color3.fromRGB(25, 25, 25)
-enterkeybutton.Position = UDim2.new(0.13534914, 0, 0.738613486, 0)
-enterkeybutton.Size = UDim2.new(0, 169, 0, 45)
-enterkeybutton.Font = Enum.Font.SourceSans
-enterkeybutton.Text = "enter key"
-enterkeybutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-enterkeybutton.TextScaled = true
-enterkeybutton.TextSize = 14.000
-enterkeybutton.TextWrapped = true
-enterkeybutton.MouseButton1Down:connect(function()
-if password.Text == "d4rk" then
-	wait(1)
-	keysis:Destroy()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/GamerEmilianoFF/trip-premiun/main/hub',true))()
-end
+enterbutton.Name = "enterbutton"
+enterbutton.Parent = keyframe
+enterbutton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+enterbutton.BorderColor3 = Color3.fromRGB(25, 25, 25)
+enterbutton.Position = UDim2.new(0.069124423, 0, 0.831081092, 0)
+enterbutton.Size = UDim2.new(0, 187, 0, 50)
+enterbutton.Font = Enum.Font.SourceSans
+enterbutton.Text = "ENTER KEY"
+enterbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+enterbutton.TextScaled = true
+enterbutton.TextSize = 14.000
+enterbutton.TextWrapped = true
+enterbutton.MouseButton1Down:connect(function()
+	if keybox.Text == "d4rk" then
+		wait(1)
+		keysistem:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/trip-premiun/main/hub%27",true))()
+	end
 end)
-password.Name = "password"
-password.Parent = keyframe
-password.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-password.BorderColor3 = Color3.fromRGB(27, 42, 53)
-password.Position = UDim2.new(0.146622911, 0, 0.398644716, 0)
-password.Size = UDim2.new(0, 150, 0, 38)
-password.Font = Enum.Font.SourceSans
-password.Text = "password here"
-password.TextColor3 = Color3.fromRGB(255, 255, 255)
-password.TextScaled = true
-password.TextSize = 14.000
-password.TextWrapped = true
+
+keybox.Name = "keybox"
+keybox.Parent = keyframe
+keybox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+keybox.BorderColor3 = Color3.fromRGB(25, 25, 25)
+keybox.Position = UDim2.new(0.0368663594, 0, 0.415540516, 0)
+keybox.Size = UDim2.new(0, 200, 0, 50)
+keybox.Font = Enum.Font.SourceSans
+keybox.Text = "PASTE KEY HERE"
+keybox.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybox.TextScaled = true
+keybox.TextSize = 14.000
+keybox.TextWrapped = true
+
+
+
+helpbutton.Name = "helpbutton"
+helpbutton.Parent = keyframe
+helpbutton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+helpbutton.Position = UDim2.new(0.90322578, 0, 0, 0)
+helpbutton.Size = UDim2.new(0, 21, 0, 23)
+helpbutton.Font = Enum.Font.SourceSans
+helpbutton.Text = "?"
+helpbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+helpbutton.TextScaled = true
+helpbutton.TextSize = 14.000
+helpbutton.TextWrapped = true
+helpbutton.MouseButton1Down:connect(function()
+helpframe.Visible = true
+end)
+
+helpframe.Name = "helpframe"
+helpframe.Parent = helpbutton
+helpframe.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+helpframe.Position = UDim2.new(-23.4285717, 0, -3.13043475, 0)
+helpframe.Size = UDim2.new(0, 226, 0, 195)
+helpframe.Visible = false
+helpframe.Active = true
+helpframe.Draggable = true
+
+howkey.Name = "howkey"
+howkey.Parent = helpframe
+howkey.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+howkey.BorderColor3 = Color3.fromRGB(35, 35, 35)
+howkey.Position = UDim2.new(0.14159292, 0, 0, 0)
+howkey.Size = UDim2.new(0, 161, 0, 35)
+howkey.Font = Enum.Font.SourceSans
+howkey.Text = "how do i get key?"
+howkey.TextColor3 = Color3.fromRGB(255, 255, 255)
+howkey.TextScaled = true
+howkey.TextSize = 14.000
+howkey.TextWrapped = true
+
+_1.Name = "1"
+_1.Parent = helpframe
+_1.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+_1.BorderColor3 = Color3.fromRGB(35, 35, 35)
+_1.Position = UDim2.new(0, 0, 0.230769232, 0)
+_1.Size = UDim2.new(0, 226, 0, 37)
+_1.Font = Enum.Font.SourceSans
+_1.Text = "1 you must have purchased trip hub premiun"
+_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1.TextScaled = true
+_1.TextSize = 14.000
+_1.TextWrapped = true
+
+_2.Name = "2"
+_2.Parent = helpframe
+_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+_2.BorderColor3 = Color3.fromRGB(35, 35, 35)
+_2.Position = UDim2.new(0, 0, 0.420512825, 0)
+_2.Size = UDim2.new(0, 226, 0, 37)
+_2.Font = Enum.Font.SourceSans
+_2.Text = "2 an admin will send you the key privately,it will work on you device"
+_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2.TextScaled = true
+_2.TextSize = 14.000
+_2.TextWrapped = true
+
+_3.Name = "3"
+_3.Parent = helpframe
+_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+_3.BorderColor3 = Color3.fromRGB(35, 35, 35)
+_3.Position = UDim2.new(0, 0, 0.646153867, 0)
+_3.Size = UDim2.new(0, 226, 0, 37)
+_3.Font = Enum.Font.SourceSans
+_3.Text = "3 copy and paste the key where it says \"enter key here\""
+_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3.TextScaled = true
+_3.TextSize = 14.000
+_3.TextWrapped = true
+
+xbutton.Name = "xbutton"
+xbutton.Parent = helpframe
+xbutton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+xbutton.BorderColor3 = Color3.fromRGB(35, 35, 35)
+xbutton.Position = UDim2.new(0.853982329, 0, 0, 0)
+xbutton.Size = UDim2.new(0, 33, 0, 32)
+xbutton.Font = Enum.Font.SourceSans
+xbutton.Text = "X"
+xbutton.TextColor3 = Color3.fromRGB(255, 0, 0)
+xbutton.TextScaled = true
+xbutton.TextSize = 14.000
+xbutton.TextWrapped = true
+xbutton.MouseButton1Down:connect(function()
+helpframe.Visible = false
+end)
